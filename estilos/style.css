@@ -7,6 +7,41 @@
 */
 
 *{
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    background-color: #53481f;
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+section#tela_login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.620);
+}
+section#tela_login > div#img{
+    display: block;
+    background: #53481f url(../imagens/feixes.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+}
+section#tela_login > div#formulario{
+    display: block;
+    padding: 10px;
 }
