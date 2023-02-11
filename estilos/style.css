@@ -25,7 +25,6 @@ section#tela_login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
     background-color: white;
     width: 250px;
@@ -34,6 +33,7 @@ section#tela_login{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.620);
     transition: width 0.5s, height 0.5s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 section#tela_login > div#img{
     display: block;
@@ -54,14 +54,31 @@ div#formulario > p{
     font-size: 0.8em;
 }
 form > div.campo{
+    background-color: #49401f;
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 div.campo > label{
     display: none;
+}
+div.campo > span{
+    color: black;
+    font-size: 1.8em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo > input{
+    background-color: #4d2a72c7;
+    color: wheat;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border-radius: 8px;
+    padding: 6px;
+    transform: translatey(-10px);
 }
 form > input[type=submit]{
     display: block;
@@ -70,7 +87,7 @@ form > input[type=submit]{
     height: 40px;
     background-color: #49401f;
     color: white;
-    border: none;
+    border: 0px;
     border-radius: 5px;
     cursor: pointer;
 }
